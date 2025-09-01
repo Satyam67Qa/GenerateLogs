@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="10" preserve-order="true" name="C:/Workspace/GenerateLogs">
+        <classes>
+            <class name="com.tests.LoginTest">
+                <methods>
+                    <include name="testInvalidLogin"/>
+                    <include name="tesValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
