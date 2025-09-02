@@ -1,0 +1,5 @@
+2025-09-02 15:40:07 INFO  com.tests.LoginTest - >>>>>>>>>>>>>>>>>START DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-09-02 15:40:09 INFO  com.tests.LoginTest - launching the chrome browser
+2025-09-02 15:40:21 INFO  com.tests.LoginTest - entering the url for valid login
+2025-09-02 15:40:21 INFO  com.tests.LoginTest - click on login button after adding valid username and password
+2025-09-02 15:40:22 INFO  com.tests.LoginTest - >>>>>>>>>>>>>>>>>CLOSED DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<

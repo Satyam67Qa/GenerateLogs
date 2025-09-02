@@ -18,7 +18,7 @@ import java.time.Duration;
 
 public class LoginTest {
 
-    private static Logger logger = LogManager.getLogger(LoginTest.class);
+    private static final Logger logger = LogManager.getLogger(LoginTest.class);
     ChromeOptions options;
     WebDriver driver;
 
@@ -38,7 +38,7 @@ public class LoginTest {
        logger.info("entering the url for invalid login");
        logger.warn("Just warning message");
        logger.fatal("fatal message");
-       logger.debug("this is debug message ");
+     //  logger.debug("this is debug message ");
        driver.findElement(By.id("login-username")).sendKeys("satyamsingh28389@gmail.co");
        driver.findElement(By.id("login-password")).sendKeys("Noc@123");
        driver.findElement(By.id("js-login-btn")).click();
