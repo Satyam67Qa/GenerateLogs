@@ -1,0 +1,8 @@
+2025-09-02 18:08:03 INFO  com.tests.LoginTest - >>>>>>>>>>>>>>>>>START DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-09-02 18:08:06 INFO  com.tests.LoginTest - launching the chrome browser
+2025-09-02 18:08:07 INFO  com.tests.LoginTest - entering the url for invalid login
+2025-09-02 18:08:07 WARN  com.tests.LoginTest - Just warning message
+2025-09-02 18:08:07 FATAL com.tests.LoginTest - fatal message
+2025-09-02 18:08:18 INFO  com.tests.LoginTest - click on login button after adding invalid username and password
+2025-09-02 18:08:19 INFO  com.tests.LoginTest - After invalid login getting the error messageYour email, password, IP address or location did not match
+2025-09-02 18:08:22 INFO  com.tests.LoginTest - >>>>>>>>>>>>>>>>>CLOSED DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<

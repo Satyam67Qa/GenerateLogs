@@ -1,0 +1,7 @@
+2025-09-02 17:58:11 INFO  com.tests.LoginTest - >>>>>>>>>>>>>>>>>START DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<
+2025-09-02 17:58:32 INFO  com.tests.LoginTest - launching the chrome browser
+2025-09-02 17:58:32 INFO  com.tests.LoginTest - entering the url for invalid login
+2025-09-02 17:58:32 WARN  com.tests.LoginTest - Just warning message
+2025-09-02 17:58:32 FATAL com.tests.LoginTest - fatal message
+2025-09-02 17:58:33 INFO  com.tests.LoginTest - click on login button after adding invalid username and password
+2025-09-02 17:58:45 INFO  com.tests.LoginTest - >>>>>>>>>>>>>>>>>CLOSED DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<

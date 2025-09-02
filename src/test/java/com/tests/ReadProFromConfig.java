@@ -12,7 +12,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class ReadProFromConfig {
+public class ReadProFromConfig  {
 
     private static final Logger logger = LogManager.getLogger(ReadProFromConfig.class);
     public static void main(String[] args) throws IOException {

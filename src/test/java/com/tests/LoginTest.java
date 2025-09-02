@@ -1,40 +1,32 @@
 package com.tests;
 
+import com.bases.ScreenshotBaseClassLogin;
+import com.utils.ScreenShotCustomListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class LoginTest {
-
+@Listeners(ScreenShotCustomListener.class)
+public class LoginTest  extends ScreenshotBaseClassLogin {
     private static final Logger logger = LogManager.getLogger(LoginTest.class);
-    ChromeOptions options;
-    WebDriver driver;
-
-   @BeforeMethod
+    @BeforeMethod
     public void setUp(){
        logger.info(">>>>>>>>>>>>>>>>>START DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<");
-       options = new ChromeOptions();
-
-       options.addArguments("--start-maximized");
-       options.addArguments("--headless");
-       driver = new ChromeDriver(options);
+       initilaization();
        logger.info("launching the chrome browser");
    }
    @Test
    public void testInvalidLogin() throws InterruptedException {
-       driver.get("https://app.vwo.com/#/login");
        logger.info("entering the url for invalid login");
        logger.warn("Just warning message");
        logger.fatal("fatal message");
@@ -49,8 +41,8 @@ public class LoginTest {
 
 //        String errorString= driver.findElement(By.className("notification-box-description")).getText();
 //        Assert.assertEquals(errorString,"Your email, password, IP address or location did not match");
-       Assert.assertEquals(errorMessage.getText(),"Your email, password, IP address or location did not match");
-       logger.info("After invalid login getting the error message"+errorMessage.getText());
+       logger.info("After invalid login getting the error message" +errorMessage.getText());
+       Assert.assertEquals(errorMessage.getText(),"Your email, password, IP address or location did not");
    }
    @Test
     public void tesValidLogin() throws InterruptedException {
@@ -68,8 +60,7 @@ public class LoginTest {
     }
    @AfterMethod
     public void tearDown(){
-
-       driver.quit();
+       close();
        logger.info(">>>>>>>>>>>>>>>>>CLOSED DRIVER<<<<<<<<<<<<<<<<<<<<<<<<<" );
    }
 
