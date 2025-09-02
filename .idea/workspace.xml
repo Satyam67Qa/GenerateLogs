@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="259f12e5-9319-4285-a55e-0e054eb6aa73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/latest_execution.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/latest_execution.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tests/ReadProFromConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tests/ReadProFromConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bases/ScreenshotBaseClassLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bases/ScreenshotBaseClassLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/ScreenShotCustomListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/ScreenShotCustomListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ScreenShot/testInvalidLogin_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ScreenShot/failedss/testInvalidLogin_.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,12 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.LoginTest.testInvalidLogin">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Workspace\GenerateLogs\src\main\resources\ScreenShot\failedss" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginTest.tesValidLogin">
     <configuration name="ReadProFromConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tests.ReadProFromConfig" />
       <module name="GenerateLogs" />
@@ -130,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.tesValidLogin" />
         <item itemvalue="TestNG.LoginTest.testInvalidLogin" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="Application.ReadProFromConfig" />
-        <item itemvalue="TestNG.LoginTest.tesValidLogin" />
         <item itemvalue="TestNG.C:/Workspace/GenerateLogs/testng.xml" />
       </list>
     </recent_temporary>

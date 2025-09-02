@@ -16,7 +16,7 @@ public class ScreenShotCustomListener extends ScreenshotBaseClassLogin implement
     }
 
     public void onTestSuccess(ITestResult result) {
-
+      passed(result.getMethod().getMethodName());
     }
 
     public void onTestFailure(ITestResult result) {

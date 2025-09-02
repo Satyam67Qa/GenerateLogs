@@ -11,10 +11,10 @@ import java.io.File;
 
 public class ScreenshotBaseClassLogin {
   public static WebDriver driver;
-    ChromeOptions options;
+    static ChromeOptions options;
 
     public static void initilaization(){
-        ChromeOptions options = new ChromeOptions();
+         options = new ChromeOptions();
 
         options.addArguments("--start-maximized");
         options.addArguments("--headless");
@@ -32,16 +32,34 @@ public void failed (String getMethodName){
 
     File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
     try{
-        File f = new File("C:/Workspace/GenerateLogs/src/main/resources/ScreenShot/"+getMethodName+"_"+System.currentTimeMillis()+".jpg");
+        File f = new File("C:/Workspace/GenerateLogs/src/main/resources/ScreenShot/failedss/"+getMethodName+"_"+System.currentTimeMillis()+".jpg");
         if(f.exists()){
                 f.delete();
         }
-        FileUtils.copyFile(sourceFile,new File("C:/Workspace/GenerateLogs/src/main/resources/ScreenShot/"+getMethodName+"_"+System.currentTimeMillis()+".jpg"));
+        FileUtils.copyFile(sourceFile,new File("C:/Workspace/GenerateLogs/src/main/resources/ScreenShot/failedss/"+getMethodName+"_"+System.currentTimeMillis()+".jpg"));
+    }catch (Exception e){
+        e.printStackTrace();
+    }
+}
+public void passed(String getMethodName){
+    File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    try {
+        File f = new File("C:/Workspace/GenerateLogs/src/main/resources/ScreenShot/passss/"+getMethodName+"_"+System.currentTimeMillis()+".jpg");
+        if (f.exists()){
+            f.delete();
+        }
+        FileUtils.copyFile(sourceFile,new File("C:/Workspace/GenerateLogs/src/main/resources/ScreenShot/passss/"+getMethodName+"_"+System.currentTimeMillis()+".jpg"));
     }catch (Exception e){
         e.printStackTrace();
     }
 
+
+
+
+
+
 }
+
 
 
 
